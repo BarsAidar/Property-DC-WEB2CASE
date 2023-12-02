@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    
+    
+</head>
+
+<body>
+    <div class="box">
+        <div class="form"><form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DHr000001tRAA" method="POST">
+            <input type="hidden" name="orgid" value="00DHr000001tRAA">
+            <input type="hidden" name="retURL" value="http://">
+    
+            <label for="name">Contact Name</label>
+            <input id="name" maxlength="80" name="name" type="text" required>
+    
+            <label for="email">Email</label>
+            <input id="email" maxlength="80" name="email" type="email" required>
+    
+            <label for="phone">Phone</label>
+            <input id="phone" maxlength="40" name="phone" type="tel" required>
+    
+            <label for="subject">Subject</label>
+            <input id="subject" maxlength="80" name="subject" type="text" required>
+    
+            <label for="description">Description</label>
+            <textarea name="description" required></textarea>
+    
+            <label for="state">State</label>
+            <select id="state" name="state" title="State" required>
+                <option value="">--None--</option>
+                <option value="Washington DC">Washington DC</option>
+                <option value="Virginia">Virginia</option>
+                <option value="Maryland">Maryland</option>
+            </select>
+    
+            <input type="submit" name="submit" value="Submit">
+        </form>
+          <!-- <h2>Sign in</h2>
+           <div class="inputBox">
+            <input type="text" required="required">
+            <span>Username</span>
+            <i></i>
+           </div> 
+           <div class="inputBox">
+            <input type="password" required="required">
+            <span>Password</span>
+            <i></i>
+           </div>
+           <div class="links">
+            <a href="#">Forget Password</a>
+            <a href="#">Signup</a>
+
+           </div>
+           <input type="submit" value="Login">
+        </div>-->
+    </div>
+</body>
+</html>
