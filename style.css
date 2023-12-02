@@ -3,7 +3,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 body{
@@ -11,9 +11,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #23242a;
-    background-image: url(https://cdn.pixabay.com/photo/2017/02/16/07/39/desktop-2070684_1280.png);
-    
+  
+    background-image:url(wallpaper-2070684_1920.png)
     
 }
 .box {
