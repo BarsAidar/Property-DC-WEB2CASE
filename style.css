@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font-family: 'Poppins', sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23242a;
+    background-image: url(https://cdn.pixabay.com/photo/2017/02/16/07/39/desktop-2070684_1280.png);
+    
+}
+.box {
+position: relative;
+width: 380px;
+height: 420px;
+background: #1c1c1c;
+border-radius: 8px;
+overflow: hidden;
+}
+.box::before{
+   content: '';
+   position: absolute; 
+   top: -50%;
+   left: -50%;
+   width: 380px;
+   height: 420px;
+   background: linear-gradient(0deg,transparent,
+   #45f3ff,#45f3ff);
+   transform-origin:bottom right ;
+   animation: animate 6s linear infinite;
+
+}
+.box::after{
+    content: '';
+    position: absolute; 
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,
+    #45f3ff,#45f3ff);
+    transform-origin:bottom right ;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+ }
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.form {
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #26292d;
+    z-index: 10;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    }
+    
+form {
+    background-color:#23242a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    height: 20px;
+   
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    margin-bottom:12px;
+}
+
+input[type="submit"] {
+    background-color:#45f3ff;
+    color:white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color:#3cbec7;
+    
+}
